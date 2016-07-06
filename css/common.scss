@@ -1,0 +1,243 @@
+@charset "UTF-8";
+@import "sass-base.scss";
+
+body{
+	background-color:#f2f2f2;
+}
+
+.inputs{
+	border:1px solid #d1d1d1;
+	height:36px;
+	line-height:36px;
+	text-indent:5px;
+	@include css3(border-radius,5px);
+}
+
+.min-btn1{
+	display:inline-block;
+	width:97px;
+	height:36px;
+	line-height:36px;
+	@include tac;
+	@include f(14);
+	color:#676767;
+	border:1px solid #d7d7d7;
+	background-color:#fff;
+	@include css3(border-radius,5px);
+}
+.min-btn2{
+	display:inline-block;
+	width:97px;
+	height:36px;
+	line-height:36px;
+	@include tac;
+	@include f(14);
+	color:#fff;
+	border:1px solid #147ed8;
+	background-color:#147ed8;
+	@include css3(border-radius,3px);
+}
+
+.head-mian{
+	height:344px;
+	@include tac;
+	@include rel;
+}
+.ad-img{
+	position: absolute;
+	left:0;
+	top:0;
+	width:100%;
+	@include tac;
+	z-index:1;
+}
+
+.head-top{
+	@include rel;
+	height:53px;
+	z-index:10;
+}
+.logo-main{
+	@include fl;
+}
+.head-menu{ 
+	@include fr;
+	a{
+		display:inline-block;
+		height:50px;
+		line-height:50px;
+		padding:0 10px;
+		color:#fff;
+		margin-left:46px;
+		&:hover{
+			color:#fff;
+			text-decoration: none;
+			border-bottom:3px solid #147ed8;
+		}
+	}
+	.head-cur{
+		color:#fff;
+		text-decoration: none;
+		border-bottom:3px solid #147ed8;
+	}
+}
+
+.pro-btns{
+	padding:33px 0 ;
+	@include tac;
+	a{
+		display:inline-block;
+		width:388px;
+		height:75px;
+		line-height:75px;
+		@include tac;
+		@include f(30);
+		font-weight: bold;
+	}
+	.pro-tigao{
+		color:#157ed8;
+		background:url(../img/ico-tigong.jpg) no-repeat 0 0;
+		margin-right:60px;
+	}
+	.pro-dedao{
+		color:#474063;
+		background:url(../img/ico-dedao.jpg) no-repeat 0 0;
+	}
+}
+.help-main{
+	margin-bottom:32px;
+}
+
+.pro-help{
+	background-color:#fff;
+}
+.pro-hTitle{
+	@include h(42);
+	line-height:45px;
+	padding-left:42px;
+	background-color:#147ed8;
+	@include f(20);
+	color: #fff;
+}
+.pro-hInfo{
+	padding:20px 46px;
+}
+.pro-hMinTip{
+	@include f(16);
+	color:#147ed8;
+	line-height:22px;
+	margin-bottom:20px;
+}
+.pro-hUl{
+	li{
+		 margin-bottom:14px;
+	}	
+	.pro-hUleft{
+		@include fl;
+		@include whlfc(128px,38px,38px,18,#000);
+	}
+	.pro-hUlright{
+		margin-left:128px;
+		line-height:38px;
+	}
+
+
+}
+
+.pay-label{
+	margin-right:30px;
+	input{
+		margin-right:3px;
+		vertical-align:middle;
+	}
+}
+
+
+.project-lists{
+	@include h(140px);
+	border:1px solid #b1b1b1;
+	background-color:#fff;
+	margin-bottom:40px;
+	.project-title{
+		@include rel;
+		@include hl(40px,40px);
+		@include f(14);
+		color: #fff;
+		background-color:#147ed8;
+		padding-left:50px;
+	}
+	.ico-round{
+		@include abs((top:10px,left:17px));
+		@include whlfc(22px,22px,22px,14,#147ed8);
+		@include tac;
+		background:url(../img/ico-round.png) no-repeat 0 0;
+	}
+
+	&.purple-lists{
+		.project-title{
+			background-color:#4e4769;
+		}
+		.ico-round{
+			@include c(#4e4769);
+		}
+	}
+
+}
+
+.pro-tableMain{
+	padding:20px 26px;
+}
+.pro-table{
+	@include tal;
+	th{
+		@include flc(14,23px,#8f8f8f);
+	}
+	td{
+		@include f(18);
+	}
+}
+
+.min-btn{
+	display:inline-block;
+	@include whlfc(77px,24px,24px,12,#3489db);
+	@include tac;
+	background:url(../img/ico-minBox.jpg) no-repeat 0 0;
+	margin-right:4px;
+	&a{
+		@include c(#3489db);
+	}
+}
+
+.page{
+	@include tar;
+	a{
+		display:inline-block;
+		width:25px;
+		height:25px;
+		line-height:25px;
+		color:#adb6c3;
+		@include tac;
+		vertical-align: middle;
+		&:hover{
+			background-color:#1b89eb;
+			color:#fff;
+		}
+	}
+	.page-total{
+		margin-left:15px;
+		font-weight: bold;
+	}
+	a.page-next,span.page-next{
+		display:inline-block;
+		vertical-align: middle;
+		width:25px;
+		height:25px;
+		background:url(../img/ico-jiao.jpg) #f2f2f2 no-repeat center center;
+	}
+}
+
+
+
+
+
+

@@ -1,0 +1,5 @@
+@charset "UTF-8";
+
+@import "sass-base.scss";
+
+@include base($content:1000,$red:#f31313,$blue:#147ed8,$gray:#676767);

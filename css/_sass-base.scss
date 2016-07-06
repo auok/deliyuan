@@ -1,0 +1,1015 @@
+@charset "utf-8";
+$mobile : false;
+//css reset;
+@mixin label(){
+    /* 清楚标签默认样式 */
+    @if( $mobile ){
+        html{font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+        html,body{-webkit-user-select:none;user-select:none;}
+        html,body,div,object,iframe,applet,object,h1,h2,h3,h4,h5,h6,p,blockquote,pre,address,dl,dt,dd,ol,ul,li,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video,progress{margin:0;padding:0;border:0;vertical-align:baseline}
+        a{text-decoration:none;-webkit-touch-callout:none;background-color:transparent}
+        li{list-style:none}
+        article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}
+        audio,canvas,progress,video{display:inline-block}
+        audio:not([controls]){display:none;height:0}
+        [hidden],template{display:none}
+        a:active,a:hover{outline:0}
+        abbr[title]{border-bottom:1px dotted}
+        b,strong{font-weight:bold}
+        dfn{font-style:italic}
+        h1{font-size:2em;margin:.67em 0}
+        small{font-size:80%}
+        sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+        sup{top:-0.5em}
+        sub{bottom:-0.25em}
+        img{border:0;-webkit-touch-callout:none;vertical-align: top;}
+        svg:not(:root){overflow:hidden}
+        figure{margin:1em 40px}
+        hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}
+        pre{overflow:auto}
+        code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}
+        a,button,input,optgroup,select,textarea{-webkit-tap-highlight-color:rgba(0,0,0,0);}
+        button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0;-webkit-appearance:none;outline:none;line-height:normal}
+        button{overflow:visible}
+        button,select{text-transform:none}
+        button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}
+        button[disabled],html input[disabled]{cursor:default}
+        button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+        input{line-height:normal}
+        input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}
+        input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}
+        input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}
+        input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}
+        fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
+        legend{border:0;padding:0}
+        textarea{overflow:auto}
+        optgroup{font-weight:bold}
+        table{border-collapse:collapse;border-spacing:0}
+        td,th{padding:0}
+    }@else{
+        // html {margin: 0; padding: 0; border: 0;_background-image:url(n1othing.txt)}
+        // body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, tbody, tfoot, thead, article, aside, dialog, figure, footer, header, hgroup, nav, section { margin: 0; padding: 0; border: 0; font-size: 100%; vertical-align: baseline;font-weight: normal; }
+        // ol, ul, li { list-style: none; }
+        // body {line-height: 1.5; background: white; font-family: 'Microsoft Yahei', Arial, Helvetica, sans-serif; font-size: 12px; color: #333;}
+        // table,tr, th, td { border-collapse: collapse; margin: 0; padding: 0;  font-size: 100%; vertical-align: baseline;}
+        // caption, th, td { font-weight: normal; float: none !important; }
+        // table, th, td, select, img, input,object{ vertical-align: middle;}
+        // :focus { outline: 0;}
+        // input,select{margin:0;padding:0;}
+        // a { color: #2c81d6; text-decoration: none; }
+        // a:hover { text-decoration:underline; }
+        // p,a,td{word-wrap:break-word;word-break:break-all;}
+        // img { border: none;vertical-align:top; }
+        // textarea{ resize:none;border:1px solid #ccc;}
+        // textarea:hover{border-color:#ccc;}
+        // input[type="text"],input[type="button"]{-webkit-appearance: none;border-radius: 0;font-family:'Microsoft Yahei','黑体', Arial, Helvetica, sans-serif;}
+        // input[type="text"]{border:solid 1px #ccc; border-radius:0;}
+        // dfn {font-style: normal;font-family: Arial;} 
+        html{font-family:"Microsoft YaHei UI","Microsoft YaHei",sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+        html,body,div,object,iframe,applet,object,h1,h2,h3,h4,h5,h6,p,blockquote,pre,address,dl,dt,dd,ol,ul,li,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video,progress{margin:0;padding:0;border:0;vertical-align:baseline}
+        li{list-style:none}
+        article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}
+        audio,canvas,progress,video{display:inline-block}
+        audio:not([controls]){display:none;height:0}
+        [hidden],template{display:none}
+        a{background-color:transparent;text-decoration:none}
+        a:active,a:hover{outline:0}
+        abbr[title]{border-bottom:1px dotted}
+        b,strong{font-weight:bold}
+        dfn{font-style:italic}
+        h1{font-size:2em;margin:.67em 0}
+        mark{background:#ff0;color:#000}
+        small{font-size:80%}
+        sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+        sup{top:-0.5em}
+        sub{bottom:-0.25em}
+        img{border:0;vertical-align: top;}
+        svg:not(:root){overflow:hidden}
+        figure{margin:1em 40px}
+        hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}
+        pre{overflow:auto}
+        code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}
+        button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0;outline:none;line-height:normal}
+        button{overflow:visible}
+        button,select{text-transform:none}
+        button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}
+        button[disabled],html input[disabled]{cursor:default}
+        button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+        input{line-height:normal}
+        input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}
+        input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}
+        input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}
+        input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}
+        fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
+        legend{border:0;padding:0}
+        textarea{overflow:auto}
+        optgroup{font-weight:bold}
+        table{border-collapse:collapse;border-spacing:0}
+        td,th{padding:0}   
+    }
+}
+@mixin block{
+    display:block;
+}
+@mixin inline{
+    display:inline;
+}
+@mixin inblock{
+    display:inline-block;
+}
+
+@mixin flex{
+    @include css3(display,flex,false,true);
+}
+@mixin none{
+    display:none;
+}
+//浮动;
+@mixin fl{
+    float:left;
+}
+@mixin fr{
+   float:right;
+}
+@mixin float($dir:left){
+    float:$dir;
+}
+//清除浮动;
+@mixin clear(){
+    *zoom:1;
+    &:after{
+        content: "";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+        overflow: hidden;
+    }
+}
+//清除滚动条出现的闪动;
+@mixin outer{
+   // margin-left: calc(100vw - 100%)!important;
+}
+///////////////////////////////////////////////
+// 循环初始字体大小:                         //  
+//  @end   : 结束字体大小(数字),必须输;      //
+//  @begin : 开始字体大小(数字),可以省略;    //
+//  @un    : 字体单位(字符串),可以省略;      //
+//  例子   : @include base-fonts(32);        //
+///////////////////////////////////////////////
+@mixin base-fonts( $end:100,$begin:12,$un:px,$format:'-' ){
+
+    @if( TestNum( $begin,$end ) ){
+        @for $i from $begin through $end {
+            @if( $i%2 == 0 ){
+                .f#{$format}#{$i}{ font-size:$i+$un; }
+            }
+        }
+    }
+
+}
+
+/////////////////////////////////////////////////////////////
+// 循环初始默认样式:                                       //
+//  @name  : 样式前缀名,必须输;                            //
+//  @style : 设置样式,必须输;                              //
+//  @end   : 结束样式,必须输;                              //
+//  @begin : 开始样式,可以省略;                            //
+//  @mult  : 循环累加倍数,可以省略;                        //
+//  @un    : 字体单位(字符串),可以省略;                    // 
+//  例子   : @include base-styles(mb,margin-bottom,30,5);  //
+/////////////////////////////////////////////////////////////
+@mixin base-styles( $name,$style,$end:100,$begin:5,$mult:5,$un:px,$format:'-' ){
+    
+    @if( TestNum( $begin,$end ) ){
+        @for $i from $begin through $end {
+            @if( $i%$mult == 0 ){
+                .#{$name}#{$format}#{$i}{ #{$style}:$i+$un; }
+            }
+            
+        }
+    }
+
+}
+
+//判断是否为数字;
+@function TestNum( $num1,$num2 ){
+    
+    @if ( not unitless($num1) or not unitless($num2) ){
+        @debug "其中数值有单位";
+        @return false;
+    }
+    @if ( type-of($num1) == number and type-of($num1) == number ) {
+        @return true;
+    }@else{
+        @debug "其中有值不数字";
+        @return false;
+    }
+}
+//判断是否为数字返回true/false;
+@function returnNum( $num ){
+    @if( type-of($num) == number ){
+        @return true;
+    }@else{
+        @return false;
+    }
+}
+//判断是否为字符串
+@function returnStr( $str,$value ){
+    @if( $value ){
+       @if( ( type-of( $num1 ) == number ) and ( $num1 == $value) ){
+            @warn  "字符串相等";
+            @return true;
+        }@else{
+            @warn  "字符串不相等";
+            @return false;
+        } 
+    }@else{
+       @if( type-of($num1) == number ){
+            @warn  "非字符串";
+            @return true;
+        }@else{
+            @warn  "字符串";
+            @return false;
+        } 
+    }
+}
+
+//一行显示。。。。;
+@mixin ellipsis{
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    overflow:hidden;
+}
+//多行显示;
+@mixin ellipsis-row( $row:2 ){
+   display: -webkit-box;
+   display: -moz-box;
+   display: -o-box;
+   display: box;
+   overflow : hidden;
+   text-overflow: ellipsis;
+   @include css3(line-clamp,$row);
+   @include css3(box-orient,vertical);
+}
+
+// 强制折行;
+@mixin break-word{
+    word-break:break-all; /*支持IE，chrome，FF不支持*/
+　　word-wrap:break-word; /*支持IE，chrome，FF*/
+}
+
+//设置字体;
+@mixin f($size:12,$un:px){
+    font-size:$size+$un; 
+}
+
+//设置字体;
+@mixin fa($family:'Microsoft Yahei'){ font-family:$family,'宋体','黑体';}
+@mixin tal{ text-align: left; }
+@mixin tar{ text-align: right; }
+@mixin tac{ text-align: center; }
+@mixin text-align( $dir:left ){text-align: $dir;}
+@mixin over{overflow:hidden; }
+@mixin ofv{overflow:visible !important;}
+@mixin hide{ display:none;  }
+@mixin block{ display:block; }
+// @mixin abs($top:'',$left:'',$index:'',$dir:false){ 
+//     position: absolute; 
+//     @if( returnNum( $top ) ){
+//         top:$top;
+//     }
+//     @if( returnNum( $left ) ){
+//         left:$top;
+//     }
+//     @if( returnNum( $index ) ){
+//         z-index:$index;
+//     }
+//     @if( $dir ){
+//        // @content;
+//     }
+    
+// }
+@mixin fixed(){
+    position: fixed;
+}
+@mixin rel{ position: relative; }
+@mixin cur{ cursor: pointer; }
+@mixin def{ cursor:default;}
+@mixin h( $num ){
+    height:$num;
+    line-height:$num;
+}
+@mixin box-sizing(){
+    @include css3(box-sizing,border-box);
+}
+
+//css3过渡;
+@mixin tran($name:all,$time:0.2s){
+    -webkit-transition : $name $time;  /* Safari 和 Chrome */
+       -moz-transition : $name $time;  /* Firefox 4 */
+        -ms-transition : $name $time;  /* IE */
+         -o-transition : $name $time;  /* Opera */
+            transition : $name $time;
+}
+
+//css3,$prefix:前缀,$suffix:后缀;
+@mixin css3( $style,$frames,$prefix:true,$suffix:false ){
+   @if( $prefix ){
+       @if( $suffix ){
+            -webkit-#{$style} : -webkit-#{$frames};  /* Safari 和 Chrome */
+               -moz-#{$style} : -moz-#{$frames};  /* Firefox 4 */
+                 -o-#{$style} : -o-#{$frames};  /* Opera */
+                    #{$style} : $frames;
+        }@else{
+            -webkit-#{$style} : $frames;  /* Safari 和 Chrome */
+               -moz-#{$style} : $frames;  /* Firefox 4 */
+                 -o-#{$style} : $frames;  /* Opera */
+                    #{$style} : $frames;
+        }
+    }@else{
+        @if( $suffix ){
+            #{$style} : -webkit-#{$frames};  /* Safari 和 Chrome */
+            #{$style} : -moz-#{$frames};  /* Firefox 4 */
+            #{$style} : -o-#{$frames};  /* Opera */
+            #{$style} : $frames;
+        }@else{
+            $style : $frames; 
+        }
+    }
+}
+
+//透明;
+@mixin opa($num:0.8){
+    opacity : $num;
+    filter  : alpha(opacity=$num*100);
+}
+
+//css3圆角;
+@mixin border-radius($radius: 5px) {
+  -webkit-border-radius : $radius;  /* Safari 和 Chrome */
+     -moz-border-radius : $radius;  /* Firefox 4 */
+      -ms-border-radius : $radius;  /* IE */
+       -o-border-radius : $radius;  /* Opera */
+          border-radius : $radius;
+}
+
+//改变默认选中颜色
+@mixin selection( $bg:#00F,$color:#fff,$obj:0 ){
+    
+    @if( type-of($obj) == number ){
+
+        ::selection {
+            background:$bg; 
+            color:$color;
+        }
+        ::-moz-selection {
+            background:$bg; 
+            color:$color;
+        }
+        ::-webkit-selection {
+            background:$bg; 
+            color:$color;
+        }
+        ::-ms-selection {
+            background:$bg; 
+            color:$color;
+        }
+        ::-o-selection {
+            background:$bg; 
+            color:$color;
+        }
+        
+    }@else{
+
+        .#{$obj}::selection {
+            background:$bg; 
+            color:$color;
+        }
+        .#{$obj}::-moz-selection {
+            background:$bg; 
+            color:$color;
+        }
+        .#{$obj}::-webkit-selection {
+            background:$bg; 
+            color:$color;
+        }
+        .#{$obj}::-ms-selection {
+            background:$bg; 
+            color:$color;
+        }
+        .#{$obj}::-o-selection {
+            background:$bg; 
+            color:$color;
+        }
+        
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////
+// css3动画,只能写在调用页面,配合.css3( @style,@frames )使用;            //
+// 例子 :                                                                //
+//  @include keyframes(animation-name) {                                 //               
+//      0% {                                                             //
+//         #{$browser}transform: translate3d(100%, 0, 0);                //
+//      }                                                                //
+//      100% {                                                           //
+//          #{$browser}transform: translate3d(0%, 0, 0);                 //
+//      }                                                                //
+//   }                                                                   //  
+//   .className{ @include css3(animation,animation-name 5s infinite); }  //
+///////////////////////////////////////////////////////////////////////////
+$browser: null;
+@mixin keyframes($animationName) {
+    @-webkit-keyframes #{$animationName} {
+        $browser: '-webkit-' !global;
+        @content;
+    }
+    @-moz-keyframes #{$animationName} {
+        $browser: '-moz-' !global;
+        @content;
+    }
+    @-ms-keyframes #{$animationName} {
+        $browser: '-ms-' !global;
+        @content;
+    }
+    @-o-keyframes #{$animationName} {
+        $browser: '-o-' !global;
+        @content;
+    }
+    @keyframes #{$animationName} {
+        $browser: '' !global;
+        @content;
+    }
+} 
+
+///////////////////////////////////////////////////////////////////////////
+// css3 滚动条;                                                          //
+// 例子 :                                                                //
+//  @include scrollbar(scrollbar-track){                                 //
+//    #{$browser}box-shadow: inset 0 0 6px rgba(0,0,0,0.3);              //
+//    background-color: #F5F5F5;                                         //
+//  };                                                                   //
+//  @include scrollbar(scrollbar){                                       //
+//    width: 12px;                                                       //
+//  };                                                                   //
+//  @include scrollbar(scrollbar-thumb){                                 //
+//    #{$browser}border-radius: 10px;                                    //
+//    #{$browser}box-shadow: inset 0 0 6px rgba(0,0,0,.3);               //
+//    background-color: #fbd0c9;                                         //
+//  };                                                                   //
+///////////////////////////////////////////////////////////////////////////
+@mixin scrollbar($style){
+    ::-webkit-#{$style}{
+        $browser: '-webkit-' !global;
+        @content;
+    }
+    ::-moz-#{$style}{
+        $browser: '-moz-' !global;
+        @content;
+    }
+    ::-ms-#{$style}{
+        $browser: '-ms-' !global;
+        @content;
+    }
+    ::-o-#{$style}{
+        $browser: '-o-' !global;
+        @content;
+    }
+    ::#{$style}{
+        $browser: '' !global;
+        @content;
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////
+// 配合hotcss.js 一起使用的移动端开发,用于px转rem的函数;                 //
+// 例子 :                                                                //
+//     .a{                                                               //
+//        width : px2rem( 30 ) 真实UI测量的值                            //
+//     }                                                                 //
+///////////////////////////////////////////////////////////////////////////
+@function px2rem( $px ){
+    @return $px*320/$designWidth/20 + rem;
+}
+
+//打包默认样式;
+@mixin base($content:950,$unit:px,$orange:#f60,$yellow:#fff000,$blue:#5fb3d2,$red:#ff546a,$gray:#ccc,$disabled:#ccc,$bor_color:#ccc,$format:'-'){
+     @include label();
+    /* 默认浮动 */
+    .fl{
+        @include fl;
+    }
+    .fr{
+        @include fr;
+    }
+    .fn-clear{
+        @include clear;
+    }
+    /* 显示隐藏 */
+    .hide{ 
+        @include hide;
+    }
+    .show{ 
+        @include block;
+    }
+    /* 文本方向 */
+    .tal{
+        @include tal;
+    }
+    .tar{ 
+        @include tar;
+    }
+    .tac{ 
+        @include tac;
+    }
+    /* 截取 */
+    .over{
+        @include over;
+    }
+    .ofv{
+        @include ofv;
+    }
+    /* 定位 */
+    .abs{
+        @include abs;
+    }
+    .rel{ 
+        @include rel;
+    }
+    /* 鼠标手势 */
+    .cursor{ 
+        @include cur;
+    }
+    .def{
+        @include def;
+    }
+    /* 。。。。 */
+    .ellipsis{
+        @include ellipsis;
+    }
+    /* 强制折行 */
+    .break#{$format}word{
+        @include break-word;
+    }
+    /* 默认颜色 */
+    .colr#{$format}red{color: $red;}
+    .colr#{$format}blue{color: $blue;}
+    .colr#{$format}gray{color: $gray;}
+    .colr#{$format}yellow{color: $yellow;}
+    .colr#{$format}org{color: $orange;}
+    /* 默认背景颜色 */
+    .bg#{$format}red{ background-color: $red;}
+    .bg#{$format}blue{background-color: $blue;}
+    .bg#{$format}gray{background-color: $gray;}
+    .bg#{$format}yellow{background-color: $yellow;}
+    .bg#{$format}org{background-color: $orange;}
+    /* 默认置灰 */
+    .disabled{ background-color:$disabled; }
+    /* 默认字体 */
+    @include base-fonts(32,$un:$unit,$format:$format);
+    /* margin  padding */
+    .mt0 { margin-top: 0 !important; }
+    @include base-styles(mt,margin-top,30,5,$un:$unit,$format:$format);
+    .mb0 { margin-bottom: 0 !important; }
+    @include base-styles(mb,margin-bottom,30,5,$un:$unit,$format:$format);
+    .ml0 { margin-left: 0 !important; }
+    @include base-styles(ml,margin-left,30,5,$un:$unit,$format:$format);
+    .mr0 { margin-right: 0 !important; }
+    @include base-styles(mr,margin-right,30,5,$un:$unit,$format:$format);
+    /* 高度 */
+    @include base-styles(blk,height,50,5,$un:$unit,$format:$format);
+    /* 边框 */
+    .bor#{$format}t{ border-top:solid 1px $bor_color;}
+    .bor#{$format}l{ border-left:solid 1px $bor_color;}
+    .bor#{$format}r{ border-right:solid 1px $bor_color;}
+    .bor#{$format}b{ border-bottom:solid 1px $bor_color;}
+    .bor#{$format}t0{ border-top:none!important;}
+    .bor#{$format}l0{ border-left:none!important;}
+    .bor#{$format}r0{ border-right:none!important;}
+    .bor#{$format}b0{ border-bottom:none!important;}
+    .bor#{$format}das{ border:1px dashed $bor_color;}
+    .bor#{$format}dot{ border:1px dotted $bor_color;}
+    .border{ border:1px solid $bor_color;}
+    /* box */
+    .content{ width: $content+$unit; margin:0 auto; }
+}
+
+//超出一行....;
+@mixin text-overflow() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+//多行显示;
+@mixin ellipsis-row( $row:2 ){
+  @include css3(display,box,false,true);
+  @include css3(line-clamp,$row);
+  @include css3(box-orient,vertical);
+  overflow : hidden;
+  text-overflow: ellipsis;
+}
+
+// 强制折行;
+@mixin break-word{
+  word-break:break-all; /*支持IE，chrome，FF不支持*/
+　word-wrap:break-word; /*支持IE，chrome，FF*/
+}
+
+//断行;
+@mixin word-wrap($wrap: break-word) {
+  overflow-wrap: $wrap;
+  word-wrap: $wrap;
+
+  @if $wrap == break-word {
+    word-break: break-all;
+  } @else {
+    word-break: $wrap;
+  }
+}
+
+//隐藏文字;
+@mixin hide-text(){
+  @include indent(101%);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+//设置text-indent;
+@mixin indent( $value:2em ){
+  text-indent:$value;
+}
+
+//显示图标;
+@mixin replace-text($image,$x:50%,$y:50%){
+  @include hide-text();
+  background-image:$image;
+  background-repeat:no-repeat;
+  background-position:$x $y;
+}
+  
+//文字居左对齐;
+@mixin tal{ 
+  @include text-align(left);
+}
+
+//文字居右对齐;
+@mixin tar{ 
+  @include text-align(right);
+}
+
+//文字居中对齐;
+@mixin tac{ 
+  @include text-align(center);
+}
+
+//设置文字对齐方式;
+@mixin text-align( $direction:left ){
+  text-align: $direction;
+}
+
+//元素顶端对齐方式;
+@mixin vit{
+  @include vertical-align(top);
+}
+
+//元素中部对齐方式;
+@mixin vic{
+  @include vertical-align(middle);
+}
+
+//元素最低对齐方式;
+@mixin vib{
+  @include vertical-align(bottom);
+}
+
+//元素垂直对齐方式;
+@mixin vertical-align( $direction:middle ){
+  //baseline    :   默认。元素放置在父元素的基线上;
+  //sub         :   垂直对齐文本的下标;
+  //super       :   垂直对齐文本的上标;
+  //top         :   把元素的顶端与行中最高元素的顶端对齐;
+  //text-top    :   把元素的顶端与父元素字体的顶端对齐;
+  //middle      :   把此元素放置在父元素的中部;
+  //bottom      :   把元素的顶端与行中最低的元素的顶端对齐;
+  //text-bottom :   把元素的底端与父元素字体的底端对齐;
+  //%           :   使用 "line-height" 属性的百分比值来排列此元素。允许使用负值;
+  //inherit     :   规定应该从父元素继承 vertical-align 属性的值;
+  vertical-align: $direction;
+}
+
+//设置width;
+@mixin w( $width ){
+    width: $width;
+}
+
+//设置height;
+@mixin h( $height ){
+    height: $height;
+}
+
+//设置width/height/line-height;
+@mixin whl($width,$height,$line-height:$height){
+    @include w($width);
+    @include h($height);
+    @include line($line-height);
+}
+
+//设置width/height/line-height/font-size;
+@mixin whlf($width,$height,$line-height,$font){
+    @include w($width);
+    @include h($height);
+    @include line($line-height);
+    @include f($font);
+}
+
+//设置width/height/line-height;
+@mixin whlfc($width,$height,$line-height,$font,$color){
+    @include w($width);
+    @include h($height);
+    @include line($line-height);
+    @include f($font);
+    @include c($color);
+}
+
+//设置height/line-height;
+@mixin hl($height,$line-height:$height){
+    @include h($height);
+    @include line($line-height);
+}
+
+//设置width/line-height;
+@mixin wl($width,$line-height:$height){
+    @include w($width);
+    @include line($line-height);
+}
+
+//设置width/height;
+@mixin size($width, $height:$width,$attr:true){
+    @if( $attr == 'w' ){
+        @include w($width);
+    }
+    @else if( $attr == 'h' ){
+        @include h($height);
+    }
+    @else{
+        @include w($width);
+        @include h($height);
+    }
+}
+
+//设置width/height;
+@mixin wh($width, $height:$width,$attr:true){
+    @if( $attr == 'w' ){
+        @include w($width);
+    }
+    @else if( $attr == 'h' ){
+        @include h($height);
+    }
+    @else{
+        @include w($width);
+        @include h($height);
+    }
+}
+
+
+//设置字体;
+@mixin f( $font:12,$un:px ){
+    font-size:$font+$un; 
+}
+
+//设置字体;
+@mixin fa( $family:'Microsoft Yahei' ){ 
+    font-family:$family,'宋体','黑体';
+}
+
+//文字颜色;
+@mixin c( $color:#000 ){
+    color:$color;
+}
+
+//文字风格;
+@mixin fs( $value:bold  ){
+    font-style: $value;
+}
+
+//文字加粗;
+@mixin b( $value:bold ){
+    font-weight: $value;
+}
+
+//去掉文字加粗;
+@mixin no-b{
+    font-weight: normal;
+}
+
+//文字斜体;
+@mixin ita( $value:italic ){
+    @include fs( $value );
+}
+
+//去掉文字风格;
+@mixin no-fs{
+    @include fs( normal );
+}
+
+//设置line-height;
+@mixin line( $line ){
+    line-height:$line;
+}
+
+//设置font-szie/line-height;
+@mixin fline( $font,$line ){
+    @include f( $font );
+    @include line( $line );
+}
+
+//设置font-size/line-height/color;
+@mixin flc( $font,$line,$color ){
+    @include f( $font );
+    @include line( $line );
+    @include c( $color );
+}
+
+//设置family/font-size/line-height/color;
+@mixin faflc( $family,$font,$line,$color ){
+    @include fa( $family );
+    @include f( $font );
+    @include line( $line );
+    @include c( $color );
+}//////////////////////////////////////////////////////////////////////////
+// 定位:                                                                  //             
+//  例子 : @include position(absolute,(top:10px,left:0px,z-index:5));   //
+//////////////////////////////////////////////////////////////////////////
+@mixin position($position,$args){
+    position: $position;
+    $parameter :top,right,bottom,left,z-index;
+    @each $o, $s in $args {
+      $i: index($parameter, $o);
+      @if( $i and type-of( $i ) == number and type-of($s) == number){
+         #{$o}: $s; 
+      } 
+    }
+}
+
+//////////////////////////////////////////////////////////////////////////
+// 绝对定位:                                                            //             
+//  例子 : @include abs((top:10px,left:0px,z-index:5));                 //
+//////////////////////////////////////////////////////////////////////////
+@mixin abs($args:false){
+    position: absolute;
+    $parameter :top,right,bottom,left,z-index;
+    @each $o, $s in $args {
+      $i: index($parameter, $o);
+      @if( $i and type-of( $i ) == number and type-of($s) == number){
+         #{$o}: $s; 
+      } 
+    }
+}
+
+//////////////////////////////////////////////////////////////////////////
+// 相对定位:                                                            //             
+//  例子 : @include rel((top:10px,left:0px,z-index:5));                 //
+//////////////////////////////////////////////////////////////////////////
+@mixin rel($args:0){
+    position: relative;
+    $parameter :top,right,bottom,left,z-index;
+    @each $o, $s in $args {
+      $i: index($parameter, $o);
+      @if( $i and type-of( $i ) == number and type-of($s) == number){
+         #{$o}: $s; 
+      } 
+    }
+}
+
+//////////////////////////////////////////////////////////////////////////
+// 固定定位:                                                            //             
+//  例子 : @include fixed((top:10px,left:0px,z-index:5));               //
+//////////////////////////////////////////////////////////////////////////
+@mixin fixed($args:0){
+    position: fixed;
+    $parameter :top,right,bottom,left,z-index;
+    @each $o, $s in $args {
+      $i: index($parameter, $o);
+      @if( $i and type-of( $i ) == number and type-of($s) == number){
+         #{$o}: $s; 
+      } 
+    }
+}
+
+//定位top值;
+@mixin t($top:0){
+    top:$top;
+}
+
+//定位left值;
+@mixin l($left:0){
+    left:$left;
+}
+
+//定位bottom值;
+@mixin b($bottom:0){
+    bottom:$bottom;
+}
+
+//定位bottom值;
+@mixin r($right:0){
+    right:$right;
+}
+
+//定位top/left值;
+@mixin tl($top:0,$left:0,$zindex:false){
+    @include t($top);
+    @include l($left);
+    @if( $zindex ){
+        @include z($zindex);
+    }   
+}
+
+//定位right/left值;
+@mixin rl($right:0,$left:0,$zindex:false){
+    @include r($right);
+    @include l($left);
+    @if( $zindex ){
+        @include z($zindex);
+    }   
+}
+
+//定位bottom/left值;
+@mixin bl($bottom:0,$left:0,$zindex:false){
+    @include b($bottom);
+    @include l($left);  
+    @if( $zindex ){
+        @include z($zindex);
+    }
+}
+
+//定位bottom/right值;
+@mixin br($bottom:0,$right:0,$zindex:false){
+    @include b($bottom);
+    @include r($right); 
+    @if( $zindex ){
+        @include z($zindex);
+    }
+}
+
+//定位top/left/bottom/right值;
+@mixin tlbr($top:0,$left:0,$bottom:0,$right:0,$zindex:false){
+    @include t($top);
+    @include l($left);
+    @include b($bottom);
+    @include r($right);
+    @if( $zindex ){
+        @include z($zindex);
+    }
+}
+
+//层级为10;
+@mixin z1{
+  @include z(10);
+}
+
+//层级为20;
+@mixin z2{
+  @include z(20);
+}
+
+//层级为30;
+@mixin z3{
+  @include z(30);
+}
+
+//层级为40;
+@mixin z4{
+   @include z(40);
+}
+
+//层级为50;
+@mixin z5{
+ @include z(50);
+}
+
+//层级为60;
+@mixin z6{
+  @include z(60);
+}
+
+@mixin z-max{
+    @include z(9999);
+}
+
+//设置层级数;
+@mixin z( $num ){
+  z-index:$num;
+}
+
+
+
+
+
+
+
+
+
+

@@ -508,10 +508,12 @@ $browser: null;
     }
     /* 显示隐藏 */
     .hide{ 
-        @include hide;
+        //@include hide;
+        display:none!important;
     }
     .show{ 
-        @include block;
+        //@include block;
+        display:block!important;
     }
     /* 文本方向 */
     .tal{

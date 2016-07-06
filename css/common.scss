@@ -7,6 +7,7 @@ body{
 
 .inputs{
 	border:1px solid #d1d1d1;
+	width:154px;
 	height:36px;
 	line-height:36px;
 	text-indent:5px;
@@ -35,6 +36,18 @@ body{
 	color:#fff;
 	border:1px solid #147ed8;
 	background-color:#147ed8;
+	@include css3(border-radius,3px);
+}
+.min-btn3{
+	display:inline-block;
+	width:97px;
+	height:36px;
+	line-height:36px;
+	@include tac;
+	@include f(14);
+	color:#fff;
+	border:1px solid #4e4769;
+	background-color:#4e4769;
 	@include css3(border-radius,3px);
 }
 
@@ -99,17 +112,33 @@ body{
 		background:url(../img/ico-tigong.jpg) no-repeat 0 0;
 		margin-right:60px;
 	}
+	.pro-tigao.pro-tabCur{
+		color:#fff;
+		background:url(../img/ico-tigongCur.jpg) no-repeat 0 0;
+	}
 	.pro-dedao{
 		color:#474063;
 		background:url(../img/ico-dedao.jpg) no-repeat 0 0;
+	}
+	.pro-dedao.pro-tabCur{
+		background:url(../img/ico-dedaoCur.jpg) no-repeat 0 0;
+		color:#fff;
 	}
 }
 .help-main{
 	margin-bottom:32px;
 }
 
+.help-lists{
+	display:none;
+}
 .pro-help{
 	background-color:#fff;
+	&.purple-help{
+		.pro-hTitle{
+			background-color:#4e4769;
+		}
+	}
 }
 .pro-hTitle{
 	@include h(42);
@@ -121,6 +150,7 @@ body{
 }
 .pro-hInfo{
 	padding:20px 46px;
+	height:270px;
 }
 .pro-hMinTip{
 	@include f(16);
@@ -134,10 +164,10 @@ body{
 	}	
 	.pro-hUleft{
 		@include fl;
-		@include whlfc(128px,38px,38px,18,#000);
+		@include whlfc(140px,38px,38px,18,#000);
 	}
 	.pro-hUlright{
-		margin-left:128px;
+		margin-left:140px;
 		line-height:38px;
 	}
 

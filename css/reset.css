@@ -172,10 +172,10 @@ td, th {
 
 /* 显示隐藏 */
 .hide {
-  display: none; }
+  display: none !important; }
 
 .show {
-  display: block; }
+  display: block !important; }
 
 /* 文本方向 */
 .tal {

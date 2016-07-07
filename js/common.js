@@ -9,4 +9,12 @@ $(function(){
 
 	});
 
+
+$('.menu-list').hover(function(){
+		$(this).addClass('head-hover').siblings('.menu-list').removeClass('head-hover');
+	},function(){
+		$(this).removeClass('head-hover');
+	});
+
+
 });

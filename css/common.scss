@@ -1,10 +1,6 @@
 @charset "UTF-8";
 @import "sass-base.scss";
 
-body{
-	background-color:#f2f2f2;
-}
-
 .inputs{
 	border:1px solid #d1d1d1;
 	width:154px;
@@ -75,7 +71,8 @@ body{
 }
 .head-menu{ 
 	@include fr;
-	a{
+	.menu-list{
+		@include rel;
 		display:inline-block;
 		height:50px;
 		line-height:50px;
@@ -88,10 +85,46 @@ body{
 			border-bottom:3px solid #147ed8;
 		}
 	}
-	.head-cur{
+	.head-cur,.head-hover{
 		color:#fff;
 		text-decoration: none;
 		border-bottom:3px solid #147ed8;
+	}
+	.head-hover{
+		.menu-div{
+			display:block;
+		}
+	}
+}
+
+.menu-div{
+	display:none;
+	@include abs();
+	left:0;
+	top:54px;
+	width:136px;
+	@include tar;
+	background-color:#147ed8;
+	.menu-info{
+		border-bottom:2px solid #539ee1;
+		padding:16px 11px; 
+		p{
+			line-height:20px;
+		}
+		.menu-one{
+			@include f(14);
+		}
+		.menu-two{
+			@include f(12);
+		}
+		a{color:#fff;}
+		.menu-three{
+			@include f(14);
+			line-height:40px;
+		}
+	}
+	.menu-infoEnd{
+		border:none;
 	}
 }
 
@@ -266,8 +299,105 @@ body{
 	}
 }
 
+.tran-main{
+	background-color:#fff;
+	margin-bottom:15px;
+	.tran-h2{
+		height:40px;
+		line-height:40px;
+		color:#313131;
+		@include f(14);
+		padding-left:22px;
+		color:#147ed8;
+		background-color:#313131;
+	}
+	.tran-top{
+		padding:12px 12px;
+	}
+	.tran-bottom{
+		border-top:1px solid #f4f4f4;
+		height:42px;
+		padding-right:12px;
+		@include tar;
+	}
+	.tran-infoM{
+		//margin-bottom:25px;
+	}
+	.tran-left{
+		@include fl;
+		@include whlfc(166px,28px,28px,12,#9b9b9b);
+		span{
+			display:inline-block;
+			vertical-align: middle;
+		}
+	}
+	.tran-right{
+		margin-left:166px;
+		height:52px;
+	}
+}
 
+.ico-minBtn{
+	display:inline-block;
+	width:63px;
+	height:27px;
+	line-height:27px;
+	@include tac;
+	color:#3bb1e4;
+	@include f(12);
+	background:url(../img/ico-miniBtn.jpg) no-repeat 0 0;
+}
 
+.tran-text{
+	color:#6f6f6f;
+	@include f(12);
+	line-height:24px;
+	span{
+		vertical-align: middle;
+	}
+}
+
+.tran-input{
+	width:804px;
+	height:24px;
+	line-height:24px;
+	border:1px solid #d3d3d3;
+	@include css3(border-radius,3px);
+	text-indent:10px;
+}
+.tran-input2{
+	@include fl;
+	width:92%;
+	vertical-align: middle;
+	@include css3(border-bottom-right-radius,0);
+	@include css3(border-top-right-radius,0);
+	border-right:none;
+}
+.tran-jiacha{
+	@include fl;
+	color: #fff;
+    background-color: #56bfdf;
+    border-color: #357ebd;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 3px 14px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
 
 
 

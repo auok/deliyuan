@@ -3,3 +3,11 @@
 @import "sass-base.scss";
 
 @include base($content:1000,$red:#f31313,$blue:#147ed8,$gray:#676767);
+
+body{
+	background-color:#f2f2f2;
+}
+
+.colr-green {
+  color: #5c9211; 
+}

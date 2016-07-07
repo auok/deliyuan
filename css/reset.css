@@ -445,3 +445,9 @@ td, th {
 .content {
   width: 1000px;
   margin: 0 auto; }
+
+body {
+  background-color: #f2f2f2; }
+
+.colr-green {
+  color: #5c9211; }

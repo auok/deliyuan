@@ -179,10 +179,10 @@ td, th {
 
 /* 文本方向 */
 .tal {
-  text-align: left; }
+  text-align: left !important; }
 
 .tar {
-  text-align: right; }
+  text-align: right !important; }
 
 .tac {
   text-align: center; }

@@ -56,8 +56,10 @@
 
 .landed-logo {
   text-align: center;
-  height: 120px;
+  height: 80px;
   line-height: 120px; }
+  .landed-logo img {
+    width: 120px; }
 
 .reg-content {
   width: 757px;
@@ -130,6 +132,8 @@
 
 .reg-logo {
   text-align: center;
-  height: 100px; }
+  height: 80px; }
+  .reg-logo img {
+    width: 120px; }
 
 /*# sourceMappingURL=register.css.map */

@@ -13,7 +13,7 @@
 
 .head-top { position: relative; height: 53px; z-index: 10; }
 
-.logo-main { float: left; }
+.logo-main { float: left; margin-top: 15px; }
 
 .head-menu { float: right; }
 .head-menu .menu-list { position: relative; display: inline-block; height: 50px; line-height: 50px; padding: 0 10px; color: #fff; margin-left: 46px; }
@@ -21,27 +21,26 @@
 .head-menu .head-cur, .head-menu .head-hover { color: #fff; text-decoration: none; border-bottom: 3px solid #147ed8; }
 .head-menu .head-hover .menu-div { display: block; }
 
-.menu-div { display: none; position: absolute; left: 0; top: 54px; width: 136px; text-align: right; background-color: #147ed8; }
-.menu-div .menu-info { border-bottom: 2px solid #539ee1; padding: 16px 11px; }
+.menu-div { display: none; position: absolute; left: 0; top: 54px; width: 136px; text-align: right; }
+.menu-div .menu-info { border-bottom: 2px solid #539ee1; padding: 16px 11px; background-color: #147ed8; }
 .menu-div .menu-info p { line-height: 20px; }
 .menu-div .menu-info .menu-one { font-size: 14px; }
 .menu-div .menu-info .menu-two { font-size: 12px; }
 .menu-div .menu-info a { color: #fff; }
 .menu-div .menu-info .menu-three { font-size: 14px; line-height: 40px; }
+.menu-div .menu-infoHover { background-color: #0a61aa; }
 .menu-div .menu-infoEnd { border: none; }
 
 .pro-btns { padding: 33px 0; text-align: center; }
 .pro-btns a { display: inline-block; width: 388px; height: 75px; line-height: 75px; text-align: center; font-size: 30px; font-weight: bold; }
 .pro-btns .pro-tigao { color: #157ed8; background: url(../img/ico-tigong.jpg) no-repeat 0 0; margin-right: 60px; }
-.pro-btns .pro-tigao.pro-tabCur { color: #fff; background: url(../img/ico-tigongCur.jpg) no-repeat 0 0; }
+.pro-btns .pro-tigao.pro-tabCur, .pro-btns .pro-tigao:hover { color: #fff; background: url(../img/ico-tigongCur.jpg) no-repeat 0 0; }
 .pro-btns .pro-dedao { color: #474063; background: url(../img/ico-dedao.jpg) no-repeat 0 0; }
-.pro-btns .pro-dedao.pro-tabCur { background: url(../img/ico-dedaoCur.jpg) no-repeat 0 0; color: #fff; }
-
-.help-main { margin-bottom: 32px; }
+.pro-btns .pro-dedao.pro-tabCur, .pro-btns .pro-dedao:hover { background: url(../img/ico-dedaoCur.jpg) no-repeat 0 0; color: #fff; }
 
 .help-lists { display: none; }
 
-.pro-help { background-color: #fff; }
+.pro-help { background-color: #fff; margin-bottom: 32px; }
 .pro-help.purple-help .pro-hTitle { background-color: #4e4769; }
 
 .pro-hTitle { height: 42; line-height: 45px; padding-left: 42px; background-color: #147ed8; font-size: 20px; color: #fff; }
@@ -81,7 +80,7 @@
 .tran-main { background-color: #fff; margin-bottom: 15px; }
 .tran-main .tran-h2 { height: 40px; line-height: 40px; color: #313131; font-size: 14px; padding-left: 22px; color: #147ed8; background-color: #313131; }
 .tran-main .tran-top { padding: 12px 12px; }
-.tran-main .tran-bottom { border-top: 1px solid #f4f4f4; height: 42px; padding-right: 12px; text-align: right; }
+.tran-main .tran-bottom { border-top: 1px solid #f4f4f4; height: 42px; padding: 0 12px 10px; text-align: right; }
 .tran-main .tran-left { float: left; width: 166px; height: 28px; line-height: 28px; font-size: 12px; color: #9b9b9b; }
 .tran-main .tran-left span { display: inline-block; vertical-align: middle; }
 .tran-main .tran-right { width: 810px; margin-left: 166px; height: 52px; text-align: left; }
@@ -103,5 +102,20 @@
 .my-teamMain { margin-bottom: 15px; background-color: #fff; }
 .my-teamMain .my-teamH2 { height: 40px; line-height: 40px; font-size: 14px; color: #147ed8; padding-left: 22px; background-color: #313131; }
 .my-teamMain .my-teamInfo { padding: 28px 22px; }
+
+.news-main .news-h5 { font-size: 12px; line-height: 30px; }
+.news-main .news-h5 a { color: #428bca; text-decoration: none; }
+.news-main .news-time { font-size: 12px; color: #999; line-height: 24px; }
+.news-main .news-txt { font-size: 12px; margin: 0 0 10px; line-height: 30px; }
+
+.ico-minBackBtn { display: inline-block; margin-bottom: 0; font-weight: 400; text-align: center; vertical-align: middle; cursor: pointer; background-image: none; border: 1px solid transparent; white-space: nowrap; padding: 6px 12px; font-size: 14px; line-height: 1.42857143; border-radius: 4px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; padding: 5px 10px; font-size: 12px; line-height: 1.5; border-radius: 3px; border: 1px solid #838A96; background: #fff; color: #7c7c7c; }
+
+.acc-main .tran-main { width: 100%; }
+.acc-main .tran-right { width: 288px; }
+.acc-main .tran-input { width: 280px; }
+
+.acc-left { float: left; width: 480px; }
+
+.acc-right { float: right; width: 480px; }
 
 /*# sourceMappingURL=common.css.map */

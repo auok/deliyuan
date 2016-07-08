@@ -60,8 +60,11 @@
 
 .landed-logo{
 	@include tac;
-	height:120px;
+	height:80px;
 	line-height:120px;
+	img{
+		width:120px;
+	}
 }
 
 .reg-content{
@@ -144,6 +147,9 @@
 
 .reg-logo{
 	@include tac;
-	height:100px;
+	height:80px;
+	img{
+		width:120px;
+	}
 }
 

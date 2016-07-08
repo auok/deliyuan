@@ -26,5 +26,13 @@ $('.menu-list').hover(function(){
 		$(this).removeClass('head-hover');
 	});
 
+ $('.menu-info').hover(function(){
+ 	var $this = $(this);
+ 	$this.addClass('menu-infoHover');
+ },function(){
+ 	var $this = $(this);
+ 	$this.removeClass('menu-infoHover');
+ });
+
 
 });

@@ -68,6 +68,7 @@
 }
 .logo-main{
 	@include fl;
+	margin-top:15px;
 }
 .head-menu{ 
 	@include fr;
@@ -104,10 +105,11 @@
 	top:54px;
 	width:136px;
 	@include tar;
-	background-color:#147ed8;
+	
 	.menu-info{
 		border-bottom:2px solid #539ee1;
 		padding:16px 11px; 
+		background-color:#147ed8;
 		p{
 			line-height:20px;
 		}
@@ -122,6 +124,9 @@
 			@include f(14);
 			line-height:40px;
 		}
+	}
+	.menu-infoHover{
+		background-color:#0a61aa;
 	}
 	.menu-infoEnd{
 		border:none;
@@ -145,7 +150,7 @@
 		background:url(../img/ico-tigong.jpg) no-repeat 0 0;
 		margin-right:60px;
 	}
-	.pro-tigao.pro-tabCur{
+	.pro-tigao.pro-tabCur,.pro-tigao:hover{
 		color:#fff;
 		background:url(../img/ico-tigongCur.jpg) no-repeat 0 0;
 	}
@@ -153,13 +158,13 @@
 		color:#474063;
 		background:url(../img/ico-dedao.jpg) no-repeat 0 0;
 	}
-	.pro-dedao.pro-tabCur{
+	.pro-dedao.pro-tabCur,.pro-dedao:hover{
 		background:url(../img/ico-dedaoCur.jpg) no-repeat 0 0;
 		color:#fff;
 	}
 }
 .help-main{
-	margin-bottom:32px;
+	
 }
 
 .help-lists{
@@ -167,6 +172,7 @@
 }
 .pro-help{
 	background-color:#fff;
+	margin-bottom:32px;
 	&.purple-help{
 		.pro-hTitle{
 			background-color:#4e4769;
@@ -317,7 +323,7 @@
 	.tran-bottom{
 		border-top:1px solid #f4f4f4;
 		height:42px;
-		padding-right:12px;
+		padding:0 12px 10px;
 		@include tar;
 	}
 	.tran-infoM{
@@ -435,3 +441,73 @@
 		padding:28px 22px;
 	}
 }
+
+.news-main{
+	.news-h5{
+		font-size: 12px;
+		line-height:30px;
+    	a{
+    		color: #428bca;
+    		text-decoration: none;
+    	}
+	}
+	.news-time{
+		font-size: 12px;
+		color: #999;
+		line-height:24px;
+	}
+	.news-txt{
+		font-size: 12px;
+		margin: 0 0 10px;
+		line-height:30px;
+	}
+}
+
+.ico-minBackBtn{
+	display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+    border: 1px solid #838A96;
+    background: #fff;
+    color: #7c7c7c;
+}
+
+.acc-main{
+	.tran-main{
+		width:100%;
+	}
+	.tran-right{
+		width:288px;
+	}
+	.tran-input{
+		width:280px;
+	}
+}
+.acc-left{
+	@include fl;
+	width:480px;
+}
+.acc-right{
+	@include fr;
+	width:480px;
+}
+
+

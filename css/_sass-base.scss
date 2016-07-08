@@ -517,10 +517,10 @@ $browser: null;
     }
     /* 文本方向 */
     .tal{
-        @include tal;
+        text-align:left!important;
     }
     .tar{ 
-        @include tar;
+        text-align:right!important;
     }
     .tac{ 
         @include tac;

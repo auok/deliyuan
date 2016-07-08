@@ -82,7 +82,7 @@
 	}
 	.reg-input{
 		display: block;
-	    width:96%;
+	    width:95%;
 	    height: 22px;
 	    padding: 6px 12px;
 	    font-size: 14px;
@@ -99,7 +99,8 @@
 	}
 	.form-control{
 		@include fl;
-		width:86%;
+		width:515px;
+		*width:493px;
 		vertical-align: middle;
 		border-bottom-right-radius: 0;
 	    border-top-right-radius: 0;
@@ -107,6 +108,7 @@
 	.btn-primary{
 		@include fl;
 		color: #fff;
+		height:36px;
 	    background-color: #428bca;
 	    border-color: #357ebd;
 	    display: inline-block;
@@ -116,9 +118,9 @@
 	    vertical-align: middle;
 	    cursor: pointer;
 	    background-image: none;
-	    border: 1px solid transparent;
+	    border:none;
 	    white-space: nowrap;
-	    padding: 7px 14px;
+	    padding:0 14px;
 	    font-size: 14px;
 	    line-height: 1.42857143;
 	    border-radius: 4px;

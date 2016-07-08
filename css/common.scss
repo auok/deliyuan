@@ -332,8 +332,10 @@
 		}
 	}
 	.tran-right{
+		width:810px;
 		margin-left:166px;
 		height:52px;
+		@include tal;
 	}
 }
 
@@ -358,6 +360,7 @@
 }
 
 .tran-input{
+	display:block;
 	width:804px;
 	height:24px;
 	line-height:24px;
@@ -368,6 +371,7 @@
 .tran-input2{
 	@include fl;
 	width:92%;
+	*width:722px;
 	vertical-align: middle;
 	@include css3(border-bottom-right-radius,0);
 	@include css3(border-top-right-radius,0);
@@ -376,6 +380,7 @@
 .tran-jiacha{
 	@include fl;
 	color: #fff;
+	height:28px;
     background-color: #56bfdf;
     border-color: #357ebd;
     display: inline-block;
@@ -387,7 +392,7 @@
     background-image: none;
     border: 1px solid transparent;
     white-space: nowrap;
-    padding: 3px 14px;
+    padding: 0 14px;
     font-size: 14px;
     line-height: 1.42857143;
     border-radius: 4px;
@@ -400,4 +405,33 @@
 }
 
 
+.my-teamTable{
+	th{
+		background-color:#147ed8;
+		color:#fff;
+		@include f(14);
+		@include tac;
+		height:42px;
+		line-height:42px;
+		border-right:1px solid #fff;
+	}
+	.teamThEnd{
+		border-right:none;
+	}
+}
 
+.my-teamMain{
+	margin-bottom:15px;
+	background-color:#fff;
+	.my-teamH2{
+		height: 40px;
+		line-height:40px;
+		@include f(14);
+		color: #147ed8;
+		padding-left:22px;
+		background-color:#313131;
+	}
+	.my-teamInfo{
+		padding:28px 22px;
+	}
+}

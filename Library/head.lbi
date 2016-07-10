@@ -1,0 +1,72 @@
+<div class="head-mian">
+    <div class="content head-top fn-clear">
+        <div class="logo-main">
+            <a href="../index.html">
+                <img src="../img/logo.png" alt="" class="ie6-img logo-img" />
+            </a>
+        </div>
+        <div class="head-menu">
+            <a href="../index.html" class='menu-list head-cur'>
+                首页
+            </a>
+            <span class="menu-list">
+                我的钱包
+                <div class="menu-div">
+                    <div class="menu-info">
+                        <p class="menu-one">
+                           总钱包
+                        </p>
+                        <p class="menu-two">
+                             100000RMB 
+                        </p>
+                    </div>
+                    <div class="menu-info">
+                        <p class="menu-one">
+                           经理奖钱包
+                        </p>
+                        <p class="menu-two">
+                             100000RMB 
+                        </p>
+                    </div>
+                    <div class="menu-info menu-infoEnd">
+                        <p class="menu-one">
+                           推荐奖钱包
+                        </p>
+                        <p class="menu-two">
+                             0RMB 
+                        </p>
+                    </div>
+                </div>
+            </span>
+            <span class="menu-list">
+                用户中心
+                <div class="menu-div">
+                    <div class="menu-info">
+                       <p class="menu-three">
+                         <a href="../激活.html">激活码管理</a>  
+                       </p>
+                    </div>
+                    <div class="menu-info">
+                        <p class="menu-three">
+                            <a href="../我的团队.html">我的团队</a> 
+                        </p>
+                    </div>
+                    <div class="menu-info menu-infoEnd">
+                       <p class="menu-three">
+                           <a href="../交易页.html">提供与得到记录</a> 
+                       </p>
+                    </div>
+                </div>
+            </span>
+            <a href="../新闻列表.html" class="menu-list">
+                新闻公告
+            </a>
+            <a href="../注册.html" class='menu-list'>
+                注册
+            </a>
+        </div>
+    </div>
+    <div class="ad-img">
+        <img src="../img/ad.jpg" alt=""  />
+    </div>
+    </div>

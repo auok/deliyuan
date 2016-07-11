@@ -18,6 +18,7 @@
 .head-menu { float: right; }
 .head-menu .menu-list { position: relative; display: inline-block; height: 50px; line-height: 50px; padding: 0 10px; color: #fff; margin-left: 46px; }
 .head-menu .menu-list:hover { color: #fff; text-decoration: none; border-bottom: 3px solid #147ed8; }
+.head-menu .menu-list a { color: #fff; }
 .head-menu .head-cur, .head-menu .head-hover { color: #fff; text-decoration: none; border-bottom: 3px solid #147ed8; }
 .head-menu .head-hover .menu-div { display: block; }
 
@@ -117,5 +118,7 @@
 .acc-left { float: left; width: 480px; }
 
 .acc-right { float: right; width: 480px; }
+
+.news-page { float: right; margin: 15px 10px 0 0; color: #7b7d7c; font-size: 14px; }
 
 /*# sourceMappingURL=common.css.map */

@@ -85,6 +85,10 @@
 			text-decoration: none;
 			border-bottom:3px solid #147ed8;
 		}
+
+		a{
+			color:#fff;
+		}
 	}
 	.head-cur,.head-hover{
 		color:#fff;
@@ -509,5 +513,14 @@
 	@include fr;
 	width:480px;
 }
+.news-page{
+	@include fr;
+	margin:15px 10px 0 0;
+	color:#7b7d7c;
+	@include f(14);
+}
+
+
+
 
 

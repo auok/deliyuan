@@ -121,4 +121,27 @@
 
 .news-page { float: right; margin: 15px 10px 0 0; color: #7b7d7c; font-size: 14px; }
 
+/* Background iframe styling for IE6. Prevents ActiveX bleed-through (<select> form elements, etc.) */
+/* Fixed posistioning emulation for IE6 Star selector used to hide definition from browsers other than IE6 For valid CSS, use a conditional include instead */
+.jqmOverlay { background-color: #000; }
+
+.jqmWindow { margin-left: -265px; width: 530px; display: none; left: 50%; position: fixed; top: 17%; }
+
+.bomb-prompt { padding: 22px; background-color: #fff; color: #333333; display: none; left: 50%; margin-left: -325px; position: fixed; top: 17%; width: 650px; }
+.bomb-prompt .bomb-colse { position: absolute; top: 20px; right: 20px; width: 18px; height: 18px; background: url(../img/colse.jpg) no-repeat 0 0; }
+.bomb-prompt .bomb-h2 { font-size: 18px; font-weight: bold; }
+.bomb-prompt .bomb-risk { line-height: 26px; font-size: 14px; color: #707070; }
+.bomb-prompt .em2 { text-indent: 2em; }
+
+.bomb-prompt1 { width: 472px; margin-left: -236px; }
+.bomb-prompt1 .reg-content { width: 100%; margin: 20px auto 0; }
+.bomb-prompt1 .reg-content .reg-inleft { width: 97px; }
+.bomb-prompt1 .reg-content .reg-inright { margin-left: 112px; }
+.bomb-prompt1 .reg-content .reg-input { width: 92%; }
+.bomb-prompt1 .reg-content .form-control { width: 275px; }
+
+.blue-btn { display: inline-block; width: 205px; height: 42px; line-height: 42px; text-align: center; -webkit-border-radius: 5px; /* Safari 和 Chrome */ -moz-border-radius: 5px; /* Firefox 4 */ -o-border-radius: 5px; /* Opera */ border-radius: 5px; color: #fff; background-color: #1f99fc; }
+
+.blue-minBtn { display: inline-block; width: 112px; height: 35px; line-height: 35px; text-align: center; color: #fff; background-color: #3f89c8; }
+
 /*# sourceMappingURL=common.css.map */

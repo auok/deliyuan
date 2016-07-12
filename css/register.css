@@ -35,6 +35,8 @@
   background: #3cb92c;
   color: #fff;
   font-size: 14px; }
+  .reg-btn:hover {
+    background: #3cb92d; }
 
 .landed-inputs {
   display: block;

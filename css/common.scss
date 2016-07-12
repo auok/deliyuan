@@ -521,6 +521,95 @@
 }
 
 
+/* Background iframe styling for IE6. Prevents ActiveX bleed-through (<select> form elements, etc.) */
+// *iframe.jqm {position:absolute;top:0;left:0;z-index:-1;
+// 	width: expression(this.parentNode.offsetWidth+'px');
+// 	height: expression(this.parentNode.offsetHeight+'px');
+// }
+//*html .jqmOverlay{display:none;}
+/* Fixed posistioning emulation for IE6
+     Star selector used to hide definition from browsers other than IE6
+     For valid CSS, use a conditional include instead */
+// *html .jqmWindow {
+//      position: absolute;
+//      top: expression((document.documentElement.scrollTop || document.body.scrollTop) + Math.round(17 * (document.documentElement.offsetHeight || document.body.clientHeight) / 100) + 'px');
+// }
+.jqmOverlay {background-color: #000;}
+.jqmWindow {margin-left: -265px; width: 530px; display: none; left: 50%; position: fixed; top:17%;}
+
+.bomb-prompt{
+	padding:22px;
+	background-color: #fff;
+    //border: 1px solid #858585;
+    color: #333333;
+    display: none;
+    left: 50%;
+    margin-left: -325px;
+    position: fixed;
+    top: 17%;
+    width:650px;
+    .bomb-colse{
+    	@include abs;
+    	top:20px;
+    	right:20px;
+    	@include wh(18px,18px);
+    	background:url(../img/colse.jpg) no-repeat 0 0;
+    }
+    .bomb-h2{
+    	@include f(18);
+    	font-weight: bold;
+    }
+    .bomb-risk{
+		line-height:26px;
+		@include f(14);
+		color:#707070;
+    }
+    .em2{
+	   text-indent: 2em;
+    }
+}
+.bomb-prompt1{
+	width:472px;
+	margin-left:-236px;
+	.reg-content{
+		width:100%;
+		margin:20px auto 0;
+		.reg-inleft{
+			width:97px;
+		}
+		.reg-inright {
+			margin-left:112px;
+		}
+		.reg-input{
+			width:92%;
+		}
+		.form-control{
+			width:275px;
+		}
+
+	}
+}
+.blue-btn{
+	display:inline-block;
+	width:205px;
+	height:42px;
+	line-height:42px;
+	@include tac;
+	@include css3(border-radius,5px);
+	color: #fff;
+	background-color:#1f99fc;
+}
+
+.blue-minBtn{
+	display:inline-block;
+	width:112px;
+	height:35px;
+	line-height:35px;
+	@include tac;
+	//@include css3(border-radius,5px);
+	color: #fff;
+	background-color:#3f89c8;
+}
 
 
 

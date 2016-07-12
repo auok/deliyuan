@@ -8,6 +8,7 @@
 <meta name="keywords" content="">
 <link href="css/reset.css" rel="stylesheet" />
 <link rel="stylesheet" href="css/register.css" />
+<link rel="stylesheet" href="css/common.css" />
 </head>
 <body>
     <div class="reg-content">
@@ -89,9 +90,74 @@
                 <input type="text" class="reg-input" />
             </div>
         </div>
+        <div class="reg-infos fn-clear">
+            <div class="reg-inleft">
+               &nbsp;
+            </div>
+            <div class="reg-inright">
+                <input type="checkbox" />风险提示
+            </div>
+        </div>
         <div class="reg-zhuceMain">
             <a href="javascript:;" class='reg-btn'>注册</a>
         </div>
     </div>
+    <!-- 弹层 -->
+    <div id="myModal" class="bomb-prompt">
+        <a href="javascript:;" class="bomb-colse"></a>
+        <div class="bomb-h2">
+            注册协议
+        </div>
+        <div class="bomb-main">
+            <div class="bomb-risk">
+                <p class="tac">风险提示</p>
+                <p>
+                    尊敬的会员：
+                </p>     
+                <p class="em2">
+                    本系统是根据市场需求建立的互联网金融共享服务平台，仅对符合平台条件并同意此协议的会员提供相关服务，在您选择平台服务前，请认真阅读以下内容：
+                </p>
+                <p class="em2">
+                   依据市场流动性、金融理财投资的不稳定性等特点，本服务平台郑重提示：在选择本平台服务前，参与投资者应确保自己完全明白该项投资的性质、预期收益及可能产生的风险，本着“自主自愿参与”的原则，提醒投资者参与本平台理财后，本服务平台不承担下述风险： 
+                </p>
+                <p  class="em2">
+                    1.政策风险：本平台是依照当前市场环境、价值投资趋势和政策设计的，如国家宏观政策、相关监管发生变化，可能影响产品的受理、投资运作、清算和匹配等业务的正常进行，导致收益降低甚至本金损失的风险。
+                </p>
+                <p class="em2">
+                     2.信用风险：本系统属于独立金融服务平台，不接收任何投资人的运作循环资金，因平台投资者诚信状况下降或诚信缺失等未能及时足额匹配本息，而导致收益损失、本金部分损失、甚至本金全部损失的风险。
+                 </p>
+                <p class="em2">
+                     3.信息风险：A:本服务平台会依据市场变化、平台发展状况进行相关信息披露，会员应及时进行了解最新系统信息，因会员自身通讯故障以及其它不可抗力等因素没有及时了解系统信息，而影响本人的投资决策，所产生的风险;B:会员自身没有保护好个人账户信息，没有及时进行变更，由此而产生的资金风险。
+                 </p>
+                <p class="em2">
+                     4.意外风险：A.因自然灾害、金融危机、战争、银行系统故障等不可抗力因素导致投资收益率降低甚至本金损失的风险；B：因投资者本人意外事故（如：车祸、病亡等）导致未能履行个人投资义务所导致的本金损失风险。
+                </p>
+                <p class="em2">
+                    Ο本人已阅读以上全部内容并通过引荐人了解系统其它相关服务信息，该投资在自身资金风险承受能力范围内，出现以上风险将独自承担！
+                </p>
+            </div>
+            <div class="tac mt-20">
+                <a href="javascript:;" class="blue-btn">同意协议</a>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-1.8.3.js"></script>
+    <script src="js/jqModal.js"></script>
+    <script>
+        $(function(){
+
+            $('#myModal').jqm({trigger:'#share_pop',modal:true});
+            //$('#myModal').jqmShow();
+
+            $('#myModal .bomb-colse').live('click',function(){
+                $('#myModal').jqmHide();
+            });
+
+            $('#myModal .blue-btn').live('click',function(){
+                $('#myModal').jqmHide();
+            });
+
+        });
+    </script>
 </body>
 </html>

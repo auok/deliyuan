@@ -8,6 +8,7 @@
 <meta name="keywords" content="">
 <link href="css/reset.css" rel="stylesheet" />
 <link rel="stylesheet" href="css/register.css" />
+<link rel="stylesheet" href="css/common.css" />
 </head>
 <body>
     <div class="landed-main">
@@ -31,5 +32,101 @@
     		</div>
     	</div>
     </div>
+    <!-- 弹层 -->
+    <div id="myModal" class="bomb-prompt bomb-prompt1">
+        <a href="javascript:;" class="bomb-colse"></a>
+        <div class="bomb-h2">
+            找回密码
+        </div>
+        <div class="bomb-main">
+            <div class="reg-content ">
+                <div class="reg-infos fn-clear">
+                    <div class="reg-inleft">
+                        手机号*
+                    </div>
+                    <div class="reg-inright ">
+                        <input type="text" class="reg-input form-control">
+                        <input type="button" value="发送" class="btn-primary">
+                    </div>
+                </div>
+                <div class="reg-infos fn-clear">
+                    <div class="reg-inleft">
+                        手机验证码*
+                    </div>
+                    <div class="reg-inright ">
+                        <input type="text" class="reg-input ">
+                    </div>
+                </div>
+                <div class="reg-infos fn-clear">
+                    <div class="reg-inleft">
+                        &nbsp;
+                    </div>
+                    <div class="reg-inright ">
+                        <a href="javascript:;" class='blue-minBtn next-btn'>下一步</a>
+                    </div>
+                </div>
+            </div>
+            <div class="reg-content hide">
+                <div class="reg-infos fn-clear">
+                    <div class="reg-inleft">
+                        新的密码*
+                    </div>
+                    <div class="reg-inright ">
+                        <input type="password" class="reg-input ">
+                        
+                    </div>
+                </div>
+                <div class="reg-infos fn-clear">
+                    <div class="reg-inleft">
+                       确认新的密码 *
+                    </div>
+                    <div class="reg-inright ">
+                        <input type="password" class="reg-input ">
+                    </div>
+                </div>
+                <div class="reg-infos fn-clear">
+                    <div class="reg-inleft">
+                        &nbsp;
+                    </div>
+                    <div class="reg-inright ">
+                        <a href="javascript:;" class='blue-minBtn queding'>确定</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <script src="js/jquery-1.8.3.js"></script>
+    <script src="js/jqModal.js"></script>
+    <script>
+        $(function(){
+
+            $('#myModal').jqm({trigger:'#share_pop',modal:true});
+            $('#myModal').jqmShow();
+
+            $('#myModal .bomb-colse').live('click',function(){
+                close();
+            });
+             $('#myModal .queding').live('click',function(){
+                close();
+            });
+
+            $('#myModal .blue-btn').live('click',function(){
+                $('#myModal').jqmHide();
+            });
+             
+             $('.next-btn').live('click',function(){
+
+                var $po = $(this).parents('.reg-content');
+                $po.addClass('hide').siblings('.reg-content').removeClass('hide');
+             });
+
+             function close(){
+                $('#myModal').jqmHide();
+                $('#myModal').find('.reg-content').eq(0).removeClass('hide');
+                $('#myModal').find('.reg-content').eq(1).addClass('hide');
+                  
+             }
+        });
+    </script>
 </body>
 </html>

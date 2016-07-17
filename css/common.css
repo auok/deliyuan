@@ -146,7 +146,27 @@
 
 .leave-bomb { padding: 0; }
 .leave-bomb .bomb-h2 { height: 54px; line-height: 54px; background-color: #313131; font-size: 14px; color: #fff; text-indent: 12px; }
-.leave-bomb .bomb-iframe { padding: 22px 16px; height: 300px; }
+.leave-bomb .bomb-iframe { padding: 22px 10px; height: 300px; line-height: 25px; font-size: 14px; overflow-y: auto; }
+.leave-bomb .bomb-iframe textarea { width: 100%; }
 .leave-bomb .bomb-iframeBtns { height: 43px; padding-top: 16px; padding-right: 20px; border-top: 1px solid #e9e9e9; text-align: right; }
+
+.iframe-h2 { font-size: 14px; }
+
+.iframe-caveat { font-weight: bold; color: red; margin-bottom: 10px; }
+
+.iframe-textareaMain { margin-bottom: 10px; }
+
+.detail-table1 { margin: 10px 0; }
+.detail-table1 td { border: 1px solid #999; }
+.detail-table1 th { text-align: left; }
+
+.detail-tr1 td { background-color: #fbdaae; }
+
+.detail-tr2 td { background-color: #afd9ff; }
+
+.detail-table2 { border: 1px solid #999; text-align: center; }
+.detail-table2 td { border-right: 1px solid #999; }
+
+.detail-tr3 td { background-color: #ccc; }
 
 /*# sourceMappingURL=common.css.map */

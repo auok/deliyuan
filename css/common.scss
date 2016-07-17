@@ -622,8 +622,14 @@
 		text-indent:12px;
 	}
 	.bomb-iframe{
-		padding:22px 16px;
+		padding:22px 10px;
 		height:300px;
+		line-height:25px;
+		font-size:14px;
+		overflow-y: auto;
+		textarea{
+			width:100%;
+		}
 	}
 	.bomb-iframeBtns{
 		height:43px;
@@ -633,5 +639,57 @@
 		@include tar;
 	}
 }
+
+.iframe-message{
+
+
+}
+
+.iframe-h2{
+	font-size:14px;
+}
+.iframe-caveat{
+	font-weight: bold;
+    color: red;
+    margin-bottom:10px;
+}
+.iframe-textareaMain{
+	margin-bottom:10px;
+}
+
+.detail-table1{
+	td{
+		border:1px solid #999;
+	}
+	th{
+		@include tal;
+	}
+	margin:10px 0;
+}
+.detail-tr1{
+	td{
+		background-color:#fbdaae;
+	}
+}
+
+.detail-tr2{
+	td{
+		background-color:#afd9ff;
+	}
+}
+.detail-table2{
+	border:1px solid #999;
+	@include tac;
+	td{
+		border-right:1px solid #999;
+	}
+}
+
+.detail-tr3{
+	td{
+		background-color:#ccc;
+	}
+}
+
 
 

@@ -98,6 +98,7 @@
 .tran-jiacha { float: left; color: #fff; height: 28px; background-color: #56bfdf; border-color: #357ebd; display: inline-block; margin-bottom: 0; font-weight: 400; text-align: center; vertical-align: middle; cursor: pointer; background-image: none; border: 1px solid transparent; white-space: nowrap; padding: 0 14px; font-size: 14px; line-height: 1.42857143; border-radius: 4px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; border-bottom-left-radius: 0; border-top-left-radius: 0; }
 
 .my-teamTable th { background-color: #147ed8; color: #fff; font-size: 14px; text-align: center; height: 42px; line-height: 42px; border-right: 1px solid #fff; }
+.my-teamTable td { height: 30px; text-align: center; vertical-align: middle; border: 1px solid #cdcdcd; }
 .my-teamTable .teamThEnd { border-right: none; }
 
 .my-teamMain { margin-bottom: 15px; background-color: #fff; }

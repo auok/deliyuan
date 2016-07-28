@@ -173,4 +173,12 @@
 
 .detail-tr3 td { background-color: #ccc; }
 
+.tuiguang-main { width: 100%; background: #fff; margin: 0 auto 15px; position: relative; border: 1px solid #e6e6e6; border-radius: 5px; box-shadow: 0 3px 0 0 #dbdbdb; }
+.tuiguang-main .tuiguang-head { background-color: #f9f9f9; background-image: -moz-linear-gradient(top, #fdfdfd, #f4f4f4); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fdfdfd), to(#f4f4f4)); background-image: -webkit-linear-gradient(top, #fdfdfd, #f4f4f4); background-image: -o-linear-gradient(top, #fdfdfd, #f4f4f4); background-image: linear-gradient(to bottom, #fdfdfd, #f4f4f4); background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffdfdfd', endColorstr='#fff4f4f4', GradientType=0); border-bottom: 1px solid #dbdbdb; text-shadow: 0 1px 0 #fff; position: relative; padding: 12px 15px; border-radius: 5px 5px 0 0; }
+.tuiguang-main .tuiguang-heading { color: #7c7c7c; font-size: 14px; margin: 0; line-height: 22px; }
+.tuiguang-main .tuiguang-body { width: 950px; margin: 0 auto; padding: 10px 0; }
+.tuiguang-main .form-control { display: block; width: 930px; font-size: 14px; line-height: 1.42857143; color: #555; background-color: #fff; background-image: none; border: 1px solid #ccc; border-radius: 4px; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; margin-buttom: 10px; padding: 0 10px; border: 1px solid #ccc; border-radius: 4px; height: 45px; }
+.tuiguang-main .tuiguang-bottom { position: relative; width: 950px; margin: 0 auto; padding-bottom: 15px; }
+.tuiguang-main .tuiguang-btn { display: block; width: 100%; margin-bottom: 0; font-weight: 400; text-align: center; vertical-align: middle; cursor: pointer; background-image: none; border: 1px solid transparent; white-space: nowrap; padding: 6px 12px; font-size: 14px; line-height: 1.42857143; border-radius: 4px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; color: #fff; background-color: #428bca; border-color: #357ebd; }
+
 /*# sourceMappingURL=common.css.map */

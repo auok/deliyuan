@@ -238,6 +238,11 @@
 		color: #fff;
 		background-color:#147ed8;
 		padding-left:50px;
+		span{
+			display:inline-block;
+			vertical-align: middle;
+		}
+		
 	}
 	.ico-round{
 		@include abs((top:10px,left:17px));
@@ -256,7 +261,14 @@
 	}
 
 }
-
+.pipei-btn{
+	color:#fff;
+	background-color:#21cc5c;
+	@include css3(border-radius,5px);
+	border: none;
+	padding:0 10px;
+	vertical-align: middle;   
+}
 .pro-tableMain{
 	padding:20px 26px;
 }

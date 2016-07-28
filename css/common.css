@@ -59,9 +59,12 @@
 
 .project-lists { height: 140px; border: 1px solid #b1b1b1; background-color: #fff; margin-bottom: 40px; }
 .project-lists .project-title { position: relative; height: 40px; line-height: 40px; font-size: 14px; color: #fff; background-color: #147ed8; padding-left: 50px; }
+.project-lists .project-title span { display: inline-block; vertical-align: middle; }
 .project-lists .ico-round { position: absolute; top: 10px; left: 17px; width: 22px; height: 22px; line-height: 22px; font-size: 14px; color: #147ed8; text-align: center; background: url(../img/ico-round.png) no-repeat 0 0; }
 .project-lists.purple-lists .project-title { background-color: #4e4769; }
 .project-lists.purple-lists .ico-round { color: #4e4769; }
+
+.pipei-btn { color: #fff; background-color: #21cc5c; -webkit-border-radius: 5px; /* Safari 和 Chrome */ -moz-border-radius: 5px; /* Firefox 4 */ -o-border-radius: 5px; /* Opera */ border-radius: 5px; border: none; padding: 0 10px; vertical-align: middle; }
 
 .pro-tableMain { padding: 20px 26px; }
 

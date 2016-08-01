@@ -79,7 +79,9 @@
 		line-height:50px;
 		padding:0 10px;
 		color:#fff;
-		margin-left:46px;
+		margin-left:20px;
+		font-size:18px;
+		vertical-align: middle;
 		&:hover{
 			color:#fff;
 			text-decoration: none;
@@ -88,6 +90,10 @@
 
 		a{
 			color:#fff;
+		}
+		&.menu-listName{
+			max-width:90px;
+			@include text-overflow;
 		}
 	}
 	.head-cur,.head-hover{
@@ -118,14 +124,14 @@
 			line-height:20px;
 		}
 		.menu-one{
-			@include f(14);
+			@include f(16);
 		}
 		.menu-two{
-			@include f(12);
+			@include f(16);
 		}
 		a{color:#fff;}
 		.menu-three{
-			@include f(14);
+			@include f(16);
 			line-height:40px;
 		}
 	}
@@ -140,6 +146,8 @@
 .pro-btns{
 	padding:33px 0 ;
 	@include tac;
+	width: 1000px;
+    margin: 0 auto;
 	a{
 		display:inline-block;
 		width:388px;
@@ -193,7 +201,6 @@
 }
 .pro-hInfo{
 	padding:20px 46px;
-	height:270px;
 }
 .pro-hMinTip{
 	@include f(16);
@@ -347,7 +354,7 @@
 	}
 	.tran-left{
 		@include fl;
-		@include whlfc(166px,28px,28px,12,#9b9b9b);
+		@include whlfc(166px,28px,28px,16,#9b9b9b);
 		span{
 			display:inline-block;
 			vertical-align: middle;
@@ -446,6 +453,16 @@
 	.teamThEnd{
 		border-right:none;
 	}
+	.teamTitle{
+		td{
+			border:none;
+			@include tal;
+			font-size:16px;
+			height: 40px;
+			line-height:1;
+		}
+		
+	}
 }
 
 .my-teamMain{
@@ -466,7 +483,7 @@
 
 .news-main{
 	.news-h5{
-		font-size: 12px;
+		font-size: 16px;
 		line-height:30px;
     	a{
     		color: #428bca;
@@ -474,12 +491,12 @@
     	}
 	}
 	.news-time{
-		font-size: 12px;
+		font-size: 14px;
 		color: #999;
 		line-height:24px;
 	}
 	.news-txt{
-		font-size: 12px;
+		font-size: 14px;
 		margin: 0 0 10px;
 		line-height:30px;
 	}
